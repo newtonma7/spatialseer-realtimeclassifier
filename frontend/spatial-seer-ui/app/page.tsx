@@ -192,12 +192,12 @@ export default function Home() {
       {status === "missing-env" && <MissingEnvBanner />}
 
       <header
-        className={`relative flex w-full flex-col items-center justify-center gap-4 px-4 py-14 transition-colors duration-500 sm:px-8 sm:py-16 ${theme.bg} ${theme.text} ring-8 ring-inset ${theme.ring}`}
+        className={`relative flex w-full flex-col items-center justify-center gap-4 px-8 py-16 transition-colors duration-500 ${theme.bg} ${theme.text} ring-8 ring-inset ${theme.ring}`}
       >
         <span className="text-sm font-medium uppercase tracking-[0.35em] opacity-80">
           Currently predicted room
         </span>
-        <h1 className="mx-auto w-full max-w-[92vw] text-center text-[clamp(2.6rem,17vw,5.4rem)] font-black uppercase leading-[0.9] tracking-tight sm:max-w-none sm:text-8xl">
+        <h1 className="text-center text-5xl font-black uppercase tracking-tight sm:text-8xl">
           {latest ? theme.label : status === "loading" ? "…" : "No data yet"}
         </h1>
         {latest?.predicted_location && (
