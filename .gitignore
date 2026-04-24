@@ -2,3 +2,4 @@ backend/.env
 frontend/spatial-seer-ui/.env.local
 **/.env
 **/.env.local
+*.pkl
