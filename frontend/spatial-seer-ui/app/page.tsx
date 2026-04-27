@@ -307,15 +307,7 @@ export default function Home() {
         </div>
 
         <p className="mt-6 text-center text-xs text-zinc-500">
-          Predictions stream from Supabase Realtime on{" "}
-          <code className="rounded bg-zinc-800 px-1.5 py-0.5 font-mono text-zinc-300">
-            public.live_predictions
-          </code>
-          . Insert a row in{" "}
-          <code className="rounded bg-zinc-800 px-1.5 py-0.5 font-mono text-zinc-300">
-            hardware_data
-          </code>{" "}
-          to trigger one.
+          Predictions stream from Supabase Realtime
         </p>
       </main>
     </div>
