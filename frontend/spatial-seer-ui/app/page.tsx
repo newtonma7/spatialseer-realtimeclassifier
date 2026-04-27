@@ -201,8 +201,16 @@ export default function Home() {
           {latest ? theme.label : status === "loading" ? "…" : "No data yet"}
         </h1>
         {latest?.predicted_location && (
-          <div className="rounded-full bg-black/25 px-4 py-1.5 font-mono text-sm tracking-wide ring-1 ring-white/20">
-            {latest.predicted_location}
+          <div className="inline-flex flex-row items-center rounded-xl bg-black/25 px-3 py-1.5 ring-1 ring-white/20 sm:rounded-2xl sm:px-4 sm:py-2">
+            <div className="flex flex-col items-center leading-tight">
+              <span className="mb-1 text-[9px] font-semibold uppercase tracking-[0.12em] text-white/75 sm:text-[10px] sm:tracking-[0.14em]">
+                Predicted location
+              </span>
+              <span className="my-1 block h-px w-20 bg-white/25 sm:w-26" />
+              <span className="font-mono text-xs tracking-wide sm:text-sm">
+                {latest.predicted_location}
+              </span>
+            </div>
           </div>
         )}
         {latest ? (
